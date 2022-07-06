@@ -3,71 +3,55 @@
 
     // tipos de variables 
 
-    name:   "String tipo cadena"
-    last name: "String tipo de cadena" 
+    name:   "String"
+    last name: "String" 
     nombre de usuario en ITI: "String"
-    edad: "Number"
-    correo electronico: var
+    edad: "Entero"
+    correo electronico: "String
 
-    mayor de edad: "number"
-    dinero ahorrado: "number"
-    deudas: "number"
+    mayor de edad: "Booleano"
+    dinero ahorrado: "Decimal"
+    deudas: "Entero"
 
     //Traduce a código JavaScript las variables del ejemplo anterior y adjunta una captura
 
-const alumno = {
-    name: "Erick",
-    last name: "Macias",
-    nombre de usuario en ITI: "erick",
-    edad: 26,
-    correo electronico: "erick.macias@iti.com",
-    mayor de edad: "Si",
-    dinero ahorrado: "si, 500",
-    deudas: "5000",
-
-}
+      const nombre = "juan", apellido = "Castro";
+    var usuario, edad, correo, mayor de edad, dinero ahorrado, deudas;
 
 
 //Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
  // Nombre completo (nombre y apellido) 
  //Dinero real (dinero ahorrado menos deudas)
+
+         const nombre = "Juan", apellido = "Castro";
+        var usuario, edad, correo, adulto, ahorros, deudas;
  
- const alumno = {
-     name: "Erick",
-     last name: "Macias",
-     dinero real: [
-         " dinero ahorrado"
-     ],
-     imprimeNombre: function () {
-         console.log("el nombre es" + this. name);
-     }
- }
+ ahorros = 10000;
+ deudas = 3000;
+ 
+ console.log(`Hola, me llamo ${nombre} ${apellido}. Y el dinero real que tengo es ${ahorros - deudas}`)
 
 
  //. Convierte el siguiente código en una función, pero, 
  //cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función
 
+        const name = "Juan David";
+          const lastname = "Castro Gallego";
+          const completeName = name + lastname;
+          const nickname = "juandc";
+ 
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 
-console.log(alumno.imprimeNombre);
-console.log(alumno.imprimeNombreCompleto);
-console.log(alumno.imprimeApodo);
 
- const alumno = function(name, lastname, complename, nickname) {
-     this.name = "Juan David";
-     this.lastname = "Castro Gallegos";
-     this.completename = Juan + Castro;
-     this.nickname = juandc; 
-     this.imprimeNombre = function (){
-         console.log("el nombre es " + this.name);
-     }
-     this.imprimeNombreCompleto = function (){
-         console.log("el nombre completo es " + this.completename);
-     }
-     this.imprimeApodo = function (){
-         console.log("el apodo es "+ this.nickname);
-     }
+ //respuesta
+ const name = "Juan", lastName = "Castro", nick = "juandc";
+ const completeName = `${name} ${lastName}`;
+ 
+ function presentarse(name, nickName){
+   console.log("Mi nombre es " + name + ", pero prefiero que me digas " + nickName + ".");
  }
- console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + "."); 
+ 
+ presentarse(completeName, nick);
 
 
  ///Replica el comportamiento del siguiente código que usa la sentencia switch Utilizando 
@@ -76,19 +60,7 @@ console.log(alumno.imprimeApodo);
 
 
 
-  const tipoDeMatricula = "Basic";
-  if (matricula === gratis) {
-
-  } if (matricula === basico){
-    
-  } if (matricula === experta) {
-
-  } if (matricula === expertaPlus) {
-
-  } else {
-
-  }
-  
+  const tipoDeMatricula = "Basic";  
     switch (tipoDeMatricula) {
       case "Free": 
    console.log("Solo puedes tomar los cursos gratis"); 
@@ -103,3 +75,28 @@ console.log(alumno.imprimeApodo);
   console.log("Tú y alguien más pueden tomar TODOS los cursos de ITI durante un año"); 
      break;
   } 
+
+       ///respuesta
+
+       if(tipoDeSuscripcion === "Free"){
+    console.log("Solo puedes tomar los cursos gratis");
+  } else if(tipoDeSuscripcion === "Basic"){
+    console.log("Puedes tomar casi todos los cursos de ITI durante un mes");
+  } else if(tipoDeSuscripcion === "Expert"){
+    console.log("Puedes tomar casi todos los cursos de ITI durante un año");
+  } else{
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de ITI durante un año");
+  }
+
+
+     if(tipoDeSuscripcion === "Free"){
+  console.log("Solo puedes tomar los cursos gratis");  
+}
+
+if(tipoDeSuscripcion === "Basic"){
+  console.log("Puedes tomar casi todos los cursos de ITI durante un mes");  
+}
+
+if(tipoDeSuscripcion === "Expert"){
+  console.log("Puedes tomar casi todos los cursos de ITI durante un año");  
+}
