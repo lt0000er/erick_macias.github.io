@@ -1,0 +1,12 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(https://img.freepik.com/vector-gratis/marco-vector-perros-sobre-fondo-blanco_53876-127700.jpg?w=2000)
+
+}
+.dogFav .dogFavCont img{
+    margin-left: 50px;
+}
+.dogFav .dogFavCont button{
+    font-weight: 500;
+    
+}
